@@ -9,40 +9,47 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Definition Files">
-      <UniqueIdentifier>{e5da50f6-b334-440f-bd3f-93419518a37e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SDK">
-      <UniqueIdentifier>{b4d658e2-ee81-4d4f-ac9e-b050cd2a8f62}</UniqueIdentifier>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CTime.def">
-      <Filter>Definition Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="CTime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Ismail Öz\Documents\Visual Studio 2010\Projects\CTime\CTime\SDK\amxplugin.cpp">
-      <Filter>SDK</Filter>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Natives.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CTime.cpp">
+    <ClCompile Include="SDK\amxplugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CTime.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Natives.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CTime.h">
+    <ClInclude Include="SDK\amx\amx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\amx\sclinux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\plugincommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
