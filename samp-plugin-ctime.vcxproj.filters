@@ -32,6 +32,9 @@
     <None Include="CTime.def">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="CTime.inc">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTime.h">
