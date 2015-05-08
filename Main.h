@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-#define VERSION "0.1.0"
+#define PLUGIN_VERSION "0.1.0"
 
 typedef void
 	(*logprintf_t)(const char *, ...)

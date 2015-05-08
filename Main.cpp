@@ -28,7 +28,7 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData) {
 	logprintf = (logprintf_t)ppData[PLUGIN_DATA_LOGPRINTF];
 	g_CTime = new CTime();
 
-	logprintf(" \n » CTime Library Plugin For Pawn v%s - Copyright © 2011 RyDeR` \n ", VERSION);
+	logprintf(" \n » CTime Library Plugin For Pawn v%s - Copyright © 2011 RyDeR` \n ", PLUGIN_VERSION);
 	
 	return 1;
 }
