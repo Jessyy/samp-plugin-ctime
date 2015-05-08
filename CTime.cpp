@@ -1,7 +1,7 @@
-/* 
-	CTime Library Plugin For Pawn
-    Copyright © 2011 RyDeR`
-*/
+/**
+ * Copyright (c) 2011 RyDeR`
+ * All rights reserved.
+ */
 
 #include "SDK/amx/amx.h"
 #include "SDK/plugincommon.h"

@@ -1,7 +1,7 @@
-/* 
-	CTime Library Plugin For Pawn
-    Copyright © 2011 RyDeR`
-*/
+/**
+ * Copyright (c) 2011 RyDeR`
+ * All rights reserved.
+ */
 
 #define _CRT_SECURE_NO_WARNINGS
 
