@@ -3,12 +3,8 @@
  * All rights reserved.
  */
 
-#define _CRT_SECURE_NO_WARNINGS
-
-#include "SDK/amx/amx.h"
-#include "SDK/plugincommon.h"
-
 #include "Natives.h"
+
 #include "CTime.h"
 
 cell AMX_NATIVE_CALL Natives::CTime_clock(AMX *pAMX, cell *iParams) {

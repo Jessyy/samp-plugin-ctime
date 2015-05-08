@@ -3,6 +3,9 @@
  * All rights reserved.
  */
 
+#include "SDK/amx/amx.h"
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <ctime>
 
 class CTime {

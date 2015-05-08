@@ -3,6 +3,8 @@
  * All rights reserved.
  */
 
+#include "SDK/amx/amx.h"
+
 namespace Natives
 {
 	cell AMX_NATIVE_CALL CTime_clock(AMX *pAMX, cell *iParams);

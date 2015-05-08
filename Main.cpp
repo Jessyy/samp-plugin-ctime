@@ -7,8 +7,9 @@
 #include "SDK/plugincommon.h"
 
 #include "Main.h"
-#include "Natives.h"
+
 #include "CTime.h"
+#include "Natives.h"
 
 CTime
 	*g_CTime

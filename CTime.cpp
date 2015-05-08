@@ -3,9 +3,6 @@
  * All rights reserved.
  */
 
-#include "SDK/amx/amx.h"
-#include "SDK/plugincommon.h"
-
 #include "CTime.h"
 
 CTime::CTime() {
