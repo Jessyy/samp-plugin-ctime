@@ -3,6 +3,8 @@
  * All rights reserved.
  */
 
+#pragma once
+
 #include "SDK/amx/amx.h"
 
 #define _CRT_SECURE_NO_WARNINGS

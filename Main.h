@@ -3,6 +3,8 @@
  * All rights reserved.
  */
 
+#pragma once
+
 #define PLUGIN_VERSION "0.1.0"
 
 typedef void
