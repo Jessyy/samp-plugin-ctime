@@ -27,7 +27,7 @@ cell AMX_NATIVE_CALL Natives::CTime_mktime(AMX *pAMX, cell *iParams) {
 	g_CTime->SetTimePointer(&tmPtr, iPhysAddr);
 	
 	time_t
-		tTime = mktime(&tmPtr);
+		tTime = mktime(&tmPtr)
 	;
 	g_CTime->SetArrayAddress(iPhysAddr, &tmPtr);
 
