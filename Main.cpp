@@ -23,39 +23,48 @@ extern void
     *pAMXFunctions
 ;
 
-PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData) {
-	pAMXFunctions = ppData[PLUGIN_DATA_AMX_EXPORTS];
-	logprintf = (logprintf_t)ppData[PLUGIN_DATA_LOGPRINTF];
-	g_CTime = new CTime();
+AMX_NATIVE_INFO amx_Natives[] =
+{
+	{ "clock",		Natives::CTime_clock },
+	{ "difftime",	Natives::CTime_difftime },
+	{ "mktime",		Natives::CTime_mktime },
+	{ "asctime",	Natives::CTime_asctime },
+	{ "ctime",		Natives::CTime_ctime },
+	{ "gmtime",		Natives::CTime_gmtime },
+	{ "localtime",	Natives::CTime_localtime },
+	{ "strftime",	Natives::CTime_strftime },
+	{ 0, 0 }
+};
 
-	logprintf(" \n » CTime Library Plugin For Pawn v%s - Copyright © 2011 RyDeR` \n ", PLUGIN_VERSION);
-	
-	return 1;
-}
-
-PLUGIN_EXPORT void PLUGIN_CALL Unload() {
-	g_CTime->~CTime();
-}
-
-PLUGIN_EXPORT unsigned int PLUGIN_CALL Supports() {
+PLUGIN_EXPORT unsigned int PLUGIN_CALL Supports()
+{
 	return SUPPORTS_VERSION | SUPPORTS_AMX_NATIVES;
 }
 
-AMX_NATIVE_INFO amx_Natives[] = {
-	{ "clock", Natives::CTime_clock },
-	{ "difftime", Natives::CTime_difftime },
-	{ "mktime", Natives::CTime_mktime },
-	{ "asctime", Natives::CTime_asctime },
-	{ "ctime", Natives::CTime_ctime },
-	{ "gmtime", Natives::CTime_gmtime },
-	{ "localtime", Natives::CTime_localtime },
-	{ "strftime", Natives::CTime_strftime }
-};
+PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
+{
+	pAMXFunctions = ppData[PLUGIN_DATA_AMX_EXPORTS];
+	logprintf = (logprintf_t)ppData[PLUGIN_DATA_LOGPRINTF];
 
-PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX *pAMX) {
+	g_CTime = new CTime();
+
+	logprintf("  CTime Plugin v%s by RyDeR` loaded", PLUGIN_VERSION);
+	return 1;
+}
+
+PLUGIN_EXPORT void PLUGIN_CALL Unload()
+{
+	g_CTime->~CTime();
+
+	logprintf("  CTime Plugin v%s by RyDeR` unloaded", PLUGIN_VERSION);
+}
+
+PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX *pAMX)
+{
 	return amx_Register(pAMX, amx_Natives, -1);
 }
 
-PLUGIN_EXPORT int PLUGIN_CALL AmxUnload(AMX *pAMX) {
+PLUGIN_EXPORT int PLUGIN_CALL AmxUnload(AMX *pAMX)
+{
 	return AMX_ERR_NONE;
 }
