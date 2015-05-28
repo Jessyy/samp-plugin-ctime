@@ -7,6 +7,15 @@
 
 #include "SDK/amx/amx.h"
 
+#include "Main.h"
+
+#define CHECK_PARAMS(nCount, sFunc) \
+	if(iParams[0] != (nCount * CELL_SIZE)) \
+	{ \
+		logprintf("%s: Expecting %d parameter(s), but found %d", sFunc, nCount, iParams[0] / sizeof(cell)); \
+		return 0; \
+	}
+
 namespace Natives
 {
 	cell AMX_NATIVE_CALL CTime_clock(AMX *pAMX, cell *iParams);

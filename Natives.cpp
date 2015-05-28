@@ -14,11 +14,15 @@ cell AMX_NATIVE_CALL Natives::CTime_clock(AMX *pAMX, cell *iParams)
 
 cell AMX_NATIVE_CALL Natives::CTime_difftime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(2, "difftime");
+
 	return (int)difftime((time_t)iParams[1], (time_t)iParams[2]);
 }
 
 cell AMX_NATIVE_CALL Natives::CTime_mktime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(1, "mktime");
+
 	cell
 		*iPhysAddr
 	;
@@ -39,6 +43,8 @@ cell AMX_NATIVE_CALL Natives::CTime_mktime(AMX *pAMX, cell *iParams)
 
 cell AMX_NATIVE_CALL Natives::CTime_asctime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(3, "asctime");
+
 	cell
 		*iPhysAddr
 	;
@@ -57,6 +63,8 @@ cell AMX_NATIVE_CALL Natives::CTime_asctime(AMX *pAMX, cell *iParams)
 
 cell AMX_NATIVE_CALL Natives::CTime_ctime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(3, "ctime");
+
 	cell
 		*iPhysAddr
 	;
@@ -71,6 +79,8 @@ cell AMX_NATIVE_CALL Natives::CTime_ctime(AMX *pAMX, cell *iParams)
 
 cell AMX_NATIVE_CALL Natives::CTime_gmtime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(2, "gmtime");
+
 	cell
 		*iPhysAddr
 	;
@@ -91,6 +101,8 @@ cell AMX_NATIVE_CALL Natives::CTime_gmtime(AMX *pAMX, cell *iParams)
 
 cell AMX_NATIVE_CALL Natives::CTime_localtime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(2, "localtime");
+
 	cell
 		*iPhysAddr
 	;
@@ -111,6 +123,8 @@ cell AMX_NATIVE_CALL Natives::CTime_localtime(AMX *pAMX, cell *iParams)
 
 cell AMX_NATIVE_CALL Natives::CTime_strftime(AMX *pAMX, cell *iParams)
 {
+	CHECK_PARAMS(4, "strftime");
+
 	cell
 		*iPhysAddr
 	;
