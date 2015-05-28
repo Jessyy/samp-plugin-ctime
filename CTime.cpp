@@ -5,14 +5,18 @@
 
 #include "CTime.h"
 
-CTime::CTime() {
+CTime::CTime()
+{
+
 }
 
-CTime::~CTime() {
+CTime::~CTime()
+{
 	delete g_CTime;
 }
 
-void CTime::SetTimePointer(tm *tmPtr, cell *iPhysAddr) {
+void CTime::SetTimePointer(tm *tmPtr, cell *iPhysAddr)
+{
 	tmPtr->tm_sec = *iPhysAddr++;
 	tmPtr->tm_min = *iPhysAddr++;
 	tmPtr->tm_hour = *iPhysAddr++;
@@ -24,7 +28,8 @@ void CTime::SetTimePointer(tm *tmPtr, cell *iPhysAddr) {
 	tmPtr->tm_isdst = *iPhysAddr;
 }
 
-void CTime::SetArrayAddress(cell *iPhysAddr, tm *tmPtr) {
+void CTime::SetArrayAddress(cell *iPhysAddr, tm *tmPtr)
+{
 	*iPhysAddr++ = tmPtr->tm_sec;
 	*iPhysAddr++ = tmPtr->tm_min;
 	*iPhysAddr++ = tmPtr->tm_hour;
