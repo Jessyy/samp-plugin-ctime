@@ -48,7 +48,7 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 
 	g_CTime = new CTime();
 
-	logprintf("  CTime Plugin v%s by RyDeR` loaded", PLUGIN_VERSION);
+	logprintf("  CTime Plugin %s by RyDeR` loaded", PLUGIN_VERSION_STR);
 	return 1;
 }
 
@@ -56,7 +56,7 @@ PLUGIN_EXPORT void PLUGIN_CALL Unload()
 {
 	g_CTime->~CTime();
 
-	logprintf("  CTime Plugin v%s by RyDeR` unloaded", PLUGIN_VERSION);
+	logprintf("  CTime Plugin %s by RyDeR` unloaded", PLUGIN_VERSION_STR);
 }
 
 PLUGIN_EXPORT int PLUGIN_CALL AmxLoad(AMX *pAMX)

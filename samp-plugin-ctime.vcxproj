@@ -95,6 +95,9 @@
     <ClInclude Include="SDK\amx\sclinux.h" />
     <ClInclude Include="SDK\plugincommon.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CTime.rc" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
