@@ -16,11 +16,11 @@ CTime
 ;
 
 logprintf_t 
-    logprintf
+	logprintf
 ;
 
 extern void 
-    *pAMXFunctions
+	*pAMXFunctions
 ;
 
 AMX_NATIVE_INFO amx_Natives[] =
