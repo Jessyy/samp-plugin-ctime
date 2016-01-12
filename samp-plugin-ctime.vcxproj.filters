@@ -15,49 +15,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CTime.cpp">
+    <ClCompile Include="src\CTime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Natives.cpp">
+    <ClCompile Include="src\Natives.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\amxplugin.cpp">
+    <ClCompile Include="src\sdk\amxplugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CTime.def">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="CTime.inc">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="src\CTime.def">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CTime.h">
+    <ClInclude Include="src\CTime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Main.h">
+    <ClInclude Include="src\Main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Natives.h">
+    <ClInclude Include="src\Natives.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\amx\amx.h">
+    <ClInclude Include="src\sdk\amx\amx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\amx\sclinux.h">
+    <ClInclude Include="src\sdk\amx\sclinux.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\plugincommon.h">
+    <ClInclude Include="src\sdk\plugincommon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="CTime.rc">
+    <ResourceCompile Include="src\CTime.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
